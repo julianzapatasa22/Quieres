@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quieres ser mi compañera de vida</title>
+    <style>
+.body{
+background-color: rgb(216, 93, 118);
+text-align: center;
+}
+
+.body__title{
+color: ghostwhite;
+
+}
+
+.body__img{
+width: 100%;
+
+}
+
+    </style>
+</head>
+<body class="body">
+    <h1 clas="body__title">Quieres ser mi compañera de vida wewe?</h1>
+    <img src="https://pbs.twimg.com/media/EVRJ9hbXQAEULlh.jpg" alt="mi foto" class="body__img">
+    <button id="yes">🥰 Shi 🥰</button>
+    <button id="no">😔 Ño 😔</button>
+
+    <script>
+const vutonsi = document.getElementById('yes');
+const vutonno = document.getElementById('no');
+
+const zomosnovios = () =>{
+alert('🥰 holi compañera 🥰');
+alert('😱 realmente Zomos compañeros :v 😱');
+location.href = 'https://www.youtube.com/watch?v=PD3gAjiqnMg';
+}
+
+const evitarno = () => {
+
+vutonno.style.position = 'absolute';
+vutonno.style.top = (Math.random()* window.innerHeight) + 'px';
+vutonno.style.left = (Math.random()* window.innerWidth) + 'px';
+}
+vutonsi.addEventListener('click', zomosnovios);
+vutonno.addEventListener('mouseover', evitarno);
+    </script>
+</body>
+</html>
